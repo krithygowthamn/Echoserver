@@ -53,10 +53,10 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             except Exception as e:
                 print(f"Error receiving/sending data: {e}")
                 exit()
-```
+
 client code
 
-```import socket
+import socket
 HOST = "192.168.69.206"  # The server's hostname or IP address
 PORT = 65432  # The port used by the server
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -65,6 +65,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     data = s.recv(1024)
 
 print(f"Received {data!r}")
+```
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/225e21f8-af1f-4d31-8e16-df27c39f9355)
